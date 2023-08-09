@@ -9,7 +9,8 @@ import java.io.IOException;
 
 @WebServlet(name = "helloServlet", urlPatterns = "/hello")
 public class HelloServlet extends HttpServlet {
-
+    
+    //HttpServletRequest, HttpServletResponse 구현체는 서블릿 컨테이너에서 제공하고 요청정보를 파싱한다
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("HelloServlet.service");
